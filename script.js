@@ -1,5 +1,4 @@
-//your code here
- const textArea = document.getElementById('evaluatedText');
+const textArea = document.getElementById('evaluatedText');
         const wordCountDisplay = document.getElementById('wordCount');
 
         function countWords(text) {
@@ -13,4 +12,5 @@
             wordCountDisplay.textContent = wordCount;
         }
 
-        textArea.addEventListe
+        textArea.addEventListener('input', updateWordCount);
+        updateWordCount();
